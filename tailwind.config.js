@@ -6,11 +6,7 @@ module.exports = {
   theme: {
     extend: {},
   },
-<<<<<<< Updated upstream
   plugins: [require('@tailwindcss/aspect-ratio'), require('@tailwindcss/forms'),],
-=======
-  plugins: [require('@tailwindcss/aspect-ratio'),],
->>>>>>> Stashed changes
 
 }
 
