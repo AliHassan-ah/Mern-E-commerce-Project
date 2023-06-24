@@ -5,7 +5,8 @@ import {
   incrementAsync,
   selectCount,
 } from '../authSlice';
-export default function Signup() {
+import { Link } from 'react-router-dom';
+export default function     Signup() {
   const count = useSelector(selectCount);
   const dispatch = useDispatch();
   return (
@@ -18,7 +19,7 @@ export default function Signup() {
             alt="Your Company"
           />
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-            Log in to your account
+          Create a New Account
           </h2>
         </div>
 
@@ -26,7 +27,7 @@ export default function Signup() {
           <form className="space-y-6" action="#" method="POST">
             <div>
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                Create a New Account
+                Email
               </label>
               <div className="mt-2">
                 <input
@@ -91,9 +92,9 @@ export default function Signup() {
 
           <p className="mt-10 text-center text-sm text-gray-500">
             Already a  Member?
-            <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+            <Link to="/login" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
                 Log In
-            </a>
+            </Link>
           </p>
         </div>
       </div> 
